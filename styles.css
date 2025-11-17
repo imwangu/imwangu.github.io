@@ -43,3 +43,19 @@ h1 {
     text-align: center;
     margin: 15px;
 }
+.sketch-gallery {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.sketch-item {
+    flex-shrink: 0;
+    width: 300px;
+}
+
+.sketch-item img {
+    width: 100%;
+    height: auto;
+}
