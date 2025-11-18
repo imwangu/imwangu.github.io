@@ -3,10 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSCE 190: Isaac Mwangu</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Isaac Mwangu - CSCE 190</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #828383; /* Grey background for entire page */
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgb(249, 249, 249);
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #3498db;
+            margin: 20px 0 15px 0;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        h3 {
+            color: #2c3e50;
+            margin: 15px 0 10px 0;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #828383;
+            border-radius: 5px;
+        }
+
+        .about p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .skills ul {
+            margin-left: 20px;
+        }
+
+        .skills li {
+            margin-bottom: 8px;
+            padding-left: 10px;
+        }
+
+        .project {
+            margin-bottom: 25px;
+            padding: 15px;
+            background: rgb(236, 236, 236);
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+        }
+
+        .project a {
+            text-decoration: none;
+            color: #2980b9;
+        }
+
+        .project a:hover {
+            color: #0b2535;
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        .sketch-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: space-between;
+            margin: 15px 0;
+        }
+
+        .sketch-item {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+        }
+
+        .sketch-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ecf0f1;
+            color: #7f8c8d;
+        }
+
+        /* Resume-specific styles */
+        .resume-container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: rgb(91, 90, 90);
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .resume-header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 20px;
+        }
+
+        .resume-header h1 {
+            font-size: 2.5em;
+            color: #d6d6d6;
+            margin-bottom: 10px;
+        }
+
+        .resume-section {
+            margin-bottom: 30px;
+        }
+
+        .resume-section h2 {
+            color: #002944;
+            margin: 25px 0 15px 0;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #6b6c6c;
+        }
+
+        .education-item, .experience-item {
+            margin-bottom: 20px;
+        }
+
+        .date {
+            color: #dedede;
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .skill-category {
+            background: #dbdbdb;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .container, .resume-container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .sketch-gallery {
+                flex-direction: column;
+            }
+            
+            .sketch-item {
+                min-width: 100%;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- CSCE 190 Portfolio -->
     <div class="container">
         <header>
             <h1>Isaac Mwangu</h1>
@@ -71,6 +278,8 @@
                         <a href="files/sketchesfile.pdf">
                             <img src="images/sketch1.JPG">
                         </a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -83,284 +292,19 @@
             <p>This webpage is for CSCE 190</p>
         </footer>
     </div>
-</body>
-</html>
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #000000;
-}
-
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    background: rgb(249, 249, 249);
-    padding: 30px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-}
-
-header {
-    text-align: center;
-    margin-bottom: 30px;
-    border-bottom: 2px solid #2c3e50;
-    padding-bottom: 20px;
-}
-
-h1 {
-    font-size: 2.5em;
-    color: #2c3e50;
-    margin-bottom: 10px;
-}
-
-h2 {
-    color: #3498db;
-    margin: 20px 0 15px 0;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #ecf0f1;
-}
-
-h3 {
-    color: #2c3e50;
-    margin: 15px 0 10px 0;
-}
-
-.section {
-    margin-bottom: 30px;
-    padding: 20px;
-    background: #828383;
-    border-radius: 5px;
-}
-
-.about p {
-    font-size: 1.1em;
-    line-height: 1.6;
-}
-
-.skills ul {
-    margin-left: 20px;
-}
-
-.skills li {
-    margin-bottom: 8px;
-    padding-left: 10px;
-}
-
-.project {
-    margin-bottom: 25px;
-    padding: 15px;
-    background: rgb(236, 236, 236);
-    border-radius: 5px;
-    border-left: 4px solid #3498db;
-}
-
-.project a {
-    text-decoration: none;
-    color: #2980b9;
-}
-
-.project a:hover {
-    color: #0b2535;
-}
-
-.project img {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 10px 0;
-}
-
-.sketch-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: space-between;
-    margin: 15px 0;
-}
-
-.sketch-item {
-    flex: 1;
-    min-width: 200px;
-    text-align: center;
-}
-
-.sketch-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.sketch-descriptions p {
-    margin: 10px 0;
-    padding: 10px;
-    background: #ecf0f1;
-    border-radius: 3px;
-}
-
-.contact p {
-    font-size: 1.1em;
-    margin: 10px 0;
-}
-
-footer {
-    text-align: center;
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px solid #ecf0f1;
-    color: #7f8c8d;
-}
-
-@media (max-width: 768px) {
-    .container {
-        padding: 15px;
-    }
-    
-    h1 {
-        font-size: 2em;
-    }
-    
-    .sketch-gallery {
-        flex-direction: column;
-    }
-    
-    .sketch-item {
-        min-width: 100%;
-    }
-}
-</style>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isaac Mwangu - Resume</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f4;
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: rgb(91, 90, 90);
-            padding: 40px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-        }
-        
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-            border-bottom: 2px solid #2c3e50;
-            padding-bottom: 20px;
-        }
-        
-        h1 {
-            font-size: 2.5em;
-            color: #d6d6d6;
-            margin-bottom: 10px;
-        }
-        
-        h2 {
-            color: #002944;
-            margin: 25px 0 15px 0;
-            padding-bottom: 5px;
-            border-bottom: 1px solid #6b6c6c;
-        }
-        
-        h3 {
-            color: #2c3e50;
-            margin: 15px 0 5px 0;
-        }
-        
-        .contact-info {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        
-        .section {
-            margin-bottom: 30px;
-        }
-        
-        .education-item, .experience-item {
-            margin-bottom: 20px;
-        }
-        
-        .date {
-            color: #dedede;
-            font-style: italic;
-            margin-bottom: 5px;
-        }
-        
-        ul {
-            margin-left: 20px;
-            margin-bottom: 10px;
-        }
-        
-        li {
-            margin-bottom: 5px;
-        }
-        
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            margin-top: 10px;
-        }
-        
-        .skill-category {
-            background: #dbdbdb;
-            padding: 15px;
-            border-radius: 5px;
-        }
-        
-        @media (max-width: 600px) {
-            .container {
-                padding: 20px;
-            }
-            
-            h1 {
-                font-size: 2em;
-            }
-            
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header>
+    <!-- Resume Section -->
+    <div class="resume-container">
+        <header class="resume-header">
             <h1>Isaac Mwangu</h1>
-            <div class="contact-info">
-                <!-- Contact information would go here -->
-            </div>
         </header>
 
-        <section class="section">
+        <section class="resume-section">
             <h2>Objective</h2>
             <p>Motivated college student with a strong interest in seeking an internship opportunity to help me obtain the soft skills and work readiness skills I will need for a future career. I am eager to apply my technical skills and problem-solving abilities and gain hands-on experience. Committed to contributing positively and learning from industry professionals.</p>
         </section>
 
-        <section class="section">
+        <section class="resume-section">
             <h2>Education</h2>
             
             <div class="education-item">
@@ -382,7 +326,7 @@ footer {
             </div>
         </section>
 
-        <section class="section">
+        <section class="resume-section">
             <h2>Experience</h2>
             
             <div class="experience-item">
@@ -410,7 +354,7 @@ footer {
             </div>
         </section>
 
-        <section class="section">
+        <section class="resume-section">
             <h2>Volunteer Experience</h2>
             <ul>
                 <li>National Honor Society's Beta Club - Community trash clean up</li>
@@ -418,7 +362,7 @@ footer {
             </ul>
         </section>
 
-        <section class="section">
+        <section class="resume-section">
             <h2>Relevant Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
@@ -449,7 +393,5 @@ footer {
             </div>
         </section>
     </div>
-</body>
-</html>
 </body>
 </html>
