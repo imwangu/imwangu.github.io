@@ -1,69 +1,3 @@
-/* Resume-specific styles */
-.resume-container {
-    max-width: 800px;
-    margin: 30px auto;
-    background: var(--white);
-    padding: 40px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-}
-
-.resume-header {
-    text-align: center;
-    margin-bottom: 40px;
-    border-bottom: 2px solid var(--primary-color);
-    padding-bottom: 20px;
-}
-
-.resume-header h1 {
-    font-size: 2.5em;
-    color: var(--primary-color);
-    margin-bottom: 10px;
-}
-
-.resume-section {
-    margin-bottom: 30px;
-}
-
-.resume-section h2 {
-    color: var(--primary-color);
-    margin: 25px 0 15px 0;
-    padding-bottom: 5px;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.education-item, .experience-item {
-    margin-bottom: 20px;
-}
-
-.date {
-    color: #666;
-    font-style: italic;
-    margin-bottom: 5px;
-}
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.skill-category {
-    background: var(--light-bg);
-    padding: 15px;
-    border-radius: 5px;
-    border-left: 4px solid var(--secondary-color);
-}
-
-@media (max-width: 768px) {
-    .resume-container {
-        padding: 15px;
-    }
-    
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-}
 /* Reset and Base Styles */
 * {
     margin: 0;
@@ -261,9 +195,66 @@ footer {
     color: var(--text-color);
 }
 
+/* Resume-specific styles */
+.resume-container {
+    max-width: 800px;
+    margin: 30px auto;
+    background: var(--white);
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.resume-header {
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 20px;
+}
+
+.resume-header h1 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.resume-section {
+    margin-bottom: 30px;
+}
+
+.resume-section h2 {
+    color: var(--primary-color);
+    margin: 25px 0 15px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.education-item, .experience-item {
+    margin-bottom: 20px;
+}
+
+.date {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.skill-category {
+    background: var(--light-bg);
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 4px solid var(--secondary-color);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
-    .container {
+    .container, .resume-container {
         padding: 15px;
     }
     
@@ -286,5 +277,9 @@ footer {
     
     .skills-content {
         flex-direction: column;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
     }
 }
