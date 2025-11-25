@@ -6,12 +6,12 @@ h1 {
 	color: rgb(47, 79, 79);
 	text-align: center;
 }
-.container { 
+.project { 
     /* make the blobs float side-by-side */
 	display:flex; 
 	flex-wrap:wrap;  
 } 
-.project h2 {
+.about-content h2 {
     /* display the h2 on its own line, not with the section blobs */
 	width: 100%;
 }
