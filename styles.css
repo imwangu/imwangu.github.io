@@ -1,5 +1,5 @@
 body {
-	background: cornsilk;
+	background: rgb(10, 10, 10);
 	font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
@@ -11,7 +11,7 @@ h1 {
 	display:flex; 
 	flex-wrap:wrap;  
 } 
-.projects h2 {
+.project h2 {
     /* display the h2 on its own line, not with the section blobs */
 	width: 100%;
 }
@@ -30,7 +30,7 @@ h1 {
 }
 .project img {
     /* adjust your image sizes as needed */
-    width: 400px;
+    width: 300;
     height: 300px;
     margin: 10px auto;
     border: 2px solid navy;
