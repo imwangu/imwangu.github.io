@@ -6,7 +6,7 @@ h1 {
 	color: rgb(47, 79, 79);
 	text-align: center;
 }
-.projects { 
+.container { 
     /* make the blobs float side-by-side */
 	display:flex; 
 	flex-wrap:wrap;  
