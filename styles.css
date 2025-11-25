@@ -10,8 +10,6 @@ h1 {
     /* Improved flex container */
     display: flex; 
     flex-wrap: wrap;
-    justify-content: center; /* Center projects horizontally */
-    gap: 20px; /* Better spacing between items */
 } 
 .about-content h2 {
     width: 100%;
