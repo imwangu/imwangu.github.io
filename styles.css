@@ -15,7 +15,7 @@ h1 {
     /* display the h2 on its own line, not with the section blobs */
 	width: 100%;
 }
-.container {
+.avatar {
     /* form the section blobs */
      width: 100px;
     height: 100px;
